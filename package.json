@@ -1,11 +1,14 @@
 {
-  "name": "gulp-run",
-  "version": "1.7.1",
+  "name": "@atomic-reactor/gulp-run",
+  "version": "1.8.0",
   "description": "Pipe to shell commands in gulp",
   "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/MrBoolean/gulp-run.git"
+    "url": "https://github.com/Atomic-Reactor/gulp-run"
   },
   "keywords": [
     "gulpplugin",
@@ -18,9 +21,9 @@
   "author": "Marc Binder <marcandrebinder@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MrBoolean/gulp-run/issues"
+    "url": "https://github.com/Atomic-Reactor/gulp-run/issues"
   },
-  "homepage": "https://github.com/MrBoolean/gulp-run",
+  "homepage": "https://github.com/Atomic-Reactor/gulp-run",
   "devDependencies": {
     "babel-eslint": "^4.1.8",
     "del": "^2.2.0",
@@ -39,7 +42,7 @@
     "should": "^8.2.1"
   },
   "dependencies": {
-    "gulp-util": "^3.0.0",
+    "chalk": "^2.4.2",
     "lodash.defaults": "^4.0.1",
     "lodash.template": "^4.0.2",
     "vinyl": "^0.4.6"

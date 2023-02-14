@@ -5,7 +5,7 @@ var util = require('util');
 var defaults = require('lodash.defaults');
 var applyTemplate = require('lodash.template');
 var Vinyl = require('vinyl');
-var gutil = require('gulp-util');
+var chalk = require('chalk');
 
 /**
  * Creates a new `gulp-run` command.
@@ -128,8 +128,8 @@ Command.prototype.exec = function exec(stdin, callback) {
   function sendLog(context) {
     var title = util.format(
       '$ %s%s',
-      gutil.colors.blue(command),
-      (self.options.verbosity < 2) ? gutil.colors.grey(' # Silenced\n') : '\n'
+      chalk.blue(command),
+      (self.options.verbosity < 2) ? chalk.grey(' # Silenced\n') : '\n'
     );
 
     context.write(title);

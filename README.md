@@ -1,5 +1,5 @@
 # gulp-run
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/c40b0223c6314a1ebab8d0024cfd1d41)](https://www.codacy.com/app/mrboolean/gulp-run)
+[Forked from gulp-run](https://github.com/m19c/gulp-run) to address security issues.
 
 Use shell commands in your gulp or vinyl pipeline.
 
@@ -10,7 +10,7 @@ This plugin is inspired by [gulp-shell] and [gulp-spawn] and attempts to improve
 ## Usage
 
 ```javascript
-var run = require('gulp-run');
+var run = require('@atomic-reactor/gulp-run');
 
 // use gulp-run to start a pipeline
 gulp.task('hello-world', function() {
